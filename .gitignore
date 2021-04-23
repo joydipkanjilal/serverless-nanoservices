@@ -3,3 +3,8 @@
 ################################################################################
 
 /ItemCheckOutAPI/obj
+/ItemCheckOutAPI/bin/Debug/net5.0
+/Nanoservices.Infrastructure/obj
+/Nanoservices.Infrastructure/bin/Debug
+/serverless-nanoservices/obj
+/serverless-nanoservices/bin/Debug
