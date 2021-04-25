@@ -3,7 +3,6 @@ using Nanoservices.Infrastructure.Definitions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Nanoservices.Infrastructure.Repositories
@@ -110,7 +109,6 @@ namespace Nanoservices.Infrastructure.Repositories
                 return Task.FromResult(true);
             return Task.FromResult(false);
         }
-
         public Task<bool> ProcessPayment(CartItem cartItem)
         {
             var product = products.Where(c => c.Id == cartItem.Product_Id).FirstOrDefault();
