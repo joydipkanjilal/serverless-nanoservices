@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nanoservices.Entities", "Nanoservices.Entities.csproj", "{79FCC153-8546-4E59-A766-28099F5A9089}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nanoservices.Entities", "Nanoservices.Entities.csproj", "{79FCC153-8546-4E59-A766-28099F5A9089}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nanoservices.Infrastructure", "..\Nanoservices.Infrastructure\Nanoservices.Infrastructure.csproj", "{A9974093-EBF1-49AF-AA0A-8341DB26E97D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nanoservices.Infrastructure", "..\Nanoservices.Infrastructure\Nanoservices.Infrastructure.csproj", "{A9974093-EBF1-49AF-AA0A-8341DB26E97D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanoservicesFunctionApp", "..\NanoservicesFunctionApp\NanoservicesFunctionApp.csproj", "{05E7DF67-1F8D-466E-939D-7AAA90FAA066}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NanoservicesFunctionApp", "..\NanoservicesFunctionApp\NanoservicesFunctionApp.csproj", "{05E7DF67-1F8D-466E-939D-7AAA90FAA066}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemCheckOutAPI", "..\ItemCheckOutAPI\ItemCheckOutAPI.csproj", "{FEF23DC5-F72C-4970-A299-662DAA3035F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemCheckOutAPI", "..\ItemCheckOutAPI\ItemCheckOutAPI.csproj", "{FEF23DC5-F72C-4970-A299-662DAA3035F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

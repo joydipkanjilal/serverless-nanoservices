@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 using Nanoservices.Infrastructure.Definitions;
 using System.Threading.Tasks;
 
-namespace Auth0ServerlessNanoserviceDemo
+namespace NanoservicesFunctionApp
 {
     public class GetAllCustomers
     {

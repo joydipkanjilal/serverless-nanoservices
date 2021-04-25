@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Nanoservices.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Nanoservices.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Nanoservices.Infrastructure.dll": {}
+        }
+      },
+      "Nanoservices.Entities/1.0.0": {
+        "runtime": {
+          "Nanoservices.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Nanoservices.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nanoservices.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

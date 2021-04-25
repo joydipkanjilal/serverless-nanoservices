@@ -1,14 +1,12 @@
-using System.IO;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
 using Nanoservices.Infrastructure.Definitions;
-using Newtonsoft.Json;
+using System.Threading.Tasks;
 
-namespace Auth0ServerlessNanoserviceDemo
+namespace NanoservicesFunctionApp
 {
     public class GetAllProducts
     {

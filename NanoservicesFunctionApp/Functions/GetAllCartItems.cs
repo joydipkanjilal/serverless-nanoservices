@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 using Nanoservices.Infrastructure.Definitions;
 using System.Threading.Tasks;
 
-namespace NanoservicesFunctionApp.Functions
+namespace NanoservicesFunctionApp
 {
     public class GetAllCartItems
     {

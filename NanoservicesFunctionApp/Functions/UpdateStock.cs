@@ -9,7 +9,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace Auth0ServerlessNanoserviceDemo
+namespace NanoservicesFunctionApp
 {
     public class UpdateStock
     {
