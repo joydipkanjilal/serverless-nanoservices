@@ -49,7 +49,6 @@ namespace ItemCheckOutAPI.Controllers
         public async Task<bool> AddItemToCart([FromBody] CartItem cartItem)
         {
             return await AddItemToCartInternal(cartItem);
-            //return true;
         }
 
         [HttpPost("ProcessPayment")]

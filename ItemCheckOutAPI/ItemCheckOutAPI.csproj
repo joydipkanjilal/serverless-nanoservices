@@ -6,10 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\serverless-nanoservices\Nanoservices.Entities.csproj" />
+    <ProjectReference Include="..\Nanoservices.Entities\Nanoservices.Entities.csproj" />
   </ItemGroup>
 
 </Project>

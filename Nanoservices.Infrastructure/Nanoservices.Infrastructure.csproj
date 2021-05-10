@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\serverless-nanoservices\Nanoservices.Entities.csproj" />
+    <ProjectReference Include="..\Nanoservices.Entities\Nanoservices.Entities.csproj" />
   </ItemGroup>
 
 </Project>
