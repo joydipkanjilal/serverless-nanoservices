@@ -20,6 +20,15 @@ namespace NanoservicesFunctionApp
             _checkoutService = checkoutService;
         }
 
+        [FunctionName("IsItemAvailable")]
+        public async Task<IActionResult> IsItemAvailable(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]
+            HttpRequest req, ILogger log)
+        {
+            string productCode = req.Query["productcode"];
+            return new OkObjectResult(await _checkoutService.IsItemAvailable(productCode));
+        }
+
         [FunctionName("GetAllCartItems")]
         public async Task<IActionResult> GetAllCartItems(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]
@@ -59,14 +68,19 @@ namespace NanoservicesFunctionApp
             return new OkObjectResult(await _checkoutService.UpdateStock(cartItem));
         }
 
-        [FunctionName("IsItemAvailable")]
-        public async Task<IActionResult> IsItemAvailable(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]
-            HttpRequest req, ILogger log)
+        [FunctionName("AddItemToCart")]
+        public async Task<IActionResult> AddItemToCart(
+           [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]
+            HttpRequestMessage req, ILogger log)
         {
-            string productCode = req.Query["productcode"];
-            return new OkObjectResult(await _checkoutService.IsItemAvailable(productCode));
+            string jsonContent = await req.Content.ReadAsStringAsync();
+            if (string.IsNullOrEmpty(jsonContent))
+            {
+                return new BadRequestErrorMessageResult("Invalid input.");
+            }
+
+            CartItem cartItem = JsonConvert.DeserializeObject<CartItem>(jsonContent);
+            return new OkObjectResult(await _checkoutService.AddItemToCart(cartItem));
         }
     }
 }
-
